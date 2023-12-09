@@ -1,0 +1,13 @@
+.main-container {
+    height: 100%;
+
+    .moves-parent-container {
+        overflow: auto;
+
+        .moves-container {
+            width: 20%;
+            padding-left: 3rem;
+            background-color: rgb(236, 255, 236);
+        }
+    }
+}

@@ -1,6 +1,17 @@
-{{data.record.name}}
-<div *ngFor="let data of moves">
-    {{data && data.name}}
+<!-- {{data.record.name}} -->
+<div class="main-container">
+    <div class="header-container">
+        <h2>
+            Moves Set
+        </h2>
+    </div>
+    <div class="moves-parent-container">
+        <div class="moves-container">
+            <div *ngFor="let data of moves; let i = index">
+                {{i+1}}. {{data && data.name}}
+            </div>
+        </div>
+    </div>
 </div>
 <!-- <ng-container *ngFor="let data of moves">
     {{data.name}}
