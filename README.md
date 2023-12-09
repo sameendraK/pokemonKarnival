@@ -1,4 +1,20 @@
 # Pokemon
+Every case is handled by using an external API. Data isn't stored in bulk manner and we don't operate on those stored results. Everything has it's own API call and handled using API.
+
+1. Cards Display:
+    This projects displays pokemon cards that are fetched from an external API and displays the pokemon cards.
+    Once the API response comes, again calls are made for the respective pokemon and then the data is rendered once all of   
+    the data is ready to be displayed.
+
+2. Search by name or ID:
+   There is search implemented which uses the search API and gets results based on the search.
+
+3. Pagination using API:
+   Pagination of the cards is implemented by making an external API call for each set of new results/ each page.
+
+4. Modal Data using API:
+   A modal is created and data is fetched only on clicking of the 'i' icon of the pokemon.
+   Modal is not opened untill there is no API result.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
 
