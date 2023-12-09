@@ -14,6 +14,8 @@ import { FormsModule } from '@angular/forms'
 import { MovesModule } from './components/moves/moves.module';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { SearchBarModule } from './components/search-bar/search-bar.module';
+import { MatIconModule } from '@angular/material/icon';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -30,7 +32,8 @@ import { SearchBarModule } from './components/search-bar/search-bar.module';
     MatDialogModule,
     FormsModule,
     MovesModule,
-    SearchBarModule
+    SearchBarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

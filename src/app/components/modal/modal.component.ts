@@ -13,7 +13,6 @@ export class ModalComponent {
     this.moves = this.data.responses;
   }
 
-
   convert() {
   }
 }

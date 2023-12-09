@@ -52,6 +52,7 @@ export class PokemonsComponent {
       this.noRecords = true;
     }
   }
+  
   moves: any[] = []
   openModal(record: any) {
     let listOfUrls = record.moves.map((rec: any) => {

@@ -1,3 +1,8 @@
 {{data.record.name}}
-
+<div *ngFor="let data of moves">
+    {{data && data.name}}
+</div>
+<!-- <ng-container *ngFor="let data of moves">
+    {{data.name}}
+</ng-container> -->
 <!-- <app-moves [data]="moves"></app-moves> -->

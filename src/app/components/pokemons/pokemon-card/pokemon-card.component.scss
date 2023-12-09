@@ -8,6 +8,7 @@
     width: 8rem;
     height: 9rem;
     margin: 1rem;
+    position: relative;
     // border-radius: 2ox;
     // width: 50%;
     color: white;
@@ -26,6 +27,17 @@
         .deitals-container-demographics {
             // margin-top: 10px;
             height: calc(100% - 8rem);
+        }
+
+        .icon-container {
+            position: absolute;
+            right: 1rem;
+            font-size: 15px;
+
+            :hover {
+                cursor: pointer;
+                font-size: 25px;
+            }
         }
     }
 }
