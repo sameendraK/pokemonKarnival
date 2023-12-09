@@ -1,0 +1,56 @@
+.pokemons-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.pokemons-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    /* Adjust as needed */
+    width: 100%;
+}
+
+.app-pokemon-card {
+    width: calc((100% - 60px) / 4);
+    /* Four cards per row */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Media query for responsiveness */
+    @media screen and (max-width: 1200px) {
+        width: calc((100% - 40px) / 3);
+        /* Three cards per row */
+    }
+
+    @media screen and (max-width: 900px) {
+        width: calc((100% - 30px) / 2);
+        /* Two cards per row */
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        /* One card per row */
+    }
+}
+
+.no-records-found {
+    height: 90vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    opacity: .2;
+}

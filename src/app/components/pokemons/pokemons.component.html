@@ -1,0 +1,23 @@
+<div class="pokemons-main-container">
+    <div class="pokemons-card-container">
+        <div class="pokemons-card-component-container">
+            <ng-container *ngIf="!noRecords else noRecordsFound"></ng-container>
+            <ng-container *ngFor="let record of pokemonsToShow">
+                <app-pokemon-card [details]="record"></app-pokemon-card>
+                <button type="button" (click)="openModal(record)">Click</button>
+                <!-- {{pokemonsToShow}} -->
+            </ng-container>
+        </div>
+    </div>
+</div>
+<ng-template #noRecordsFound>
+    <div *ngIf="apiResponse else loadingTemplate" class="no-records-found">
+        No records found
+    </div>
+</ng-template>
+
+<ng-template #loadingTemplate>
+    <div class="no-records-found">
+        Loading
+    </div>
+</ng-template>
