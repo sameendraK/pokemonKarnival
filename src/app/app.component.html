@@ -1,8 +1,12 @@
-<div class="search-bar-container">
-  <app-search-bar></app-search-bar>
-</div>
-<router-outlet></router-outlet>
-<div class="pagination-container">
-  <button type="button" (click)="previousPageClickHandler($event)" [disabled]="isFirstPage">Previous</button>
-  <button type="button" (click)="nextPageClickHandler($event)">Next</button>
+<div class="main-container">
+  <div class="search-bar-container">
+    <app-search-bar></app-search-bar>
+  </div>
+  <div class="router-outlet-container">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="pagination-container">
+    <button type="button" (click)="previousPageClickHandler($event)" [disabled]="isFirstPage">Previous</button>
+    <button type="button" (click)="nextPageClickHandler($event)">Next</button>
+  </div>
 </div>

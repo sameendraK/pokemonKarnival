@@ -1,0 +1,17 @@
+.main-container {
+    height: 100vh;
+
+    .search-bar-container {
+        height: 5rem;
+    }
+
+    .router-outlet-container {
+        height: calc(100% - 10rem);
+        overflow: auto;
+    }
+
+    .pagination-container {
+        height: 5rem;
+        position: fixed;
+    }
+}

@@ -4,7 +4,7 @@
             <ng-container *ngIf="!noRecords else noRecordsFound"></ng-container>
             <ng-container *ngFor="let record of pokemonsToShow">
                 <app-pokemon-card [details]="record"></app-pokemon-card>
-                <button type="button" (click)="openModal(record)">Click</button>
+                <!-- <button type="button" (click)="openModal(record)">Click</button> -->
                 <!-- {{pokemonsToShow}} -->
             </ng-container>
         </div>

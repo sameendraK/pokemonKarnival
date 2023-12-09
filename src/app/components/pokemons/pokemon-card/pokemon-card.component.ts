@@ -8,7 +8,7 @@ import { Component, Input, SimpleChanges } from '@angular/core';
 export class PokemonCardComponent {
 
   @Input()
-  details: any[] = [];
+  details: any;
   // @Input()
   name: string = '';
   // @Input()
@@ -18,16 +18,19 @@ export class PokemonCardComponent {
 
   ngOnChanges(changes: SimpleChanges) {
     console.log(changes);
-    if (changes && changes['details']) {
-      let details = changes['details'];
-      this.assignValues(details)
-      // this.name = changes['name']
-    }
+    this.assignValues();
+    // if (changes && changes['details']) {
+    //   let details = changes['details'];
+    //   this.assignValues(details)
+    //   // this.name = changes['name']
+    // }
   }
-  assignValues(details: any) {
-    this.name = details.currentValue.name;
-    this.height = details.currentValue.height;
-    this.weight = details.currentValue.weight
+  assignValues() {
+    this
+    // this.name = details.name;
+    // this.height = details.currentValue.height;
+    // this.weight = details.currentValue.weight
+    // // this.imageUrl = details.currentValue.sprites.
   }
   clickHandler(event: any) {
     console.log(event)

@@ -1,11 +1,31 @@
 .pokemon-card-container {
     padding: 1rem;
     background-color: rgb(80, 109, 226);
-    border-radius: 1px;
+    border-radius: 1rem;
     min-height: 5rem;
     display: flex;
-    width: 15rem;
-    margin: 3rem;
+    justify-content: center;
+    width: 8rem;
+    height: 9rem;
+    margin: 1rem;
+    // border-radius: 2ox;
     // width: 50%;
     color: white;
+
+    .details-container {
+        .image-container {
+            height: 6rem;
+            // margin-top: 10px;
+
+            img {
+                background-color: white;
+                border-radius: 0.5rem;
+            }
+        }
+
+        .deitals-container-demographics {
+            // margin-top: 10px;
+            height: calc(100% - 8rem);
+        }
+    }
 }

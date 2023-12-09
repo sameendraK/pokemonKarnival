@@ -1,15 +1,20 @@
 <div class="pokemon-card-container">
     <div class="details-container">
-        <div class="name-container">
-            <div class="name-text-container">
-                {{name}}
+        <div class="image-container">
+            <img src="{{details.sprites.front_default}}">
+        </div>
+        <div class="deitals-container-demographics">
+            <div class="name-container">
+                <div class="name-text-container">
+                    {{details.name}}
+                </div>
             </div>
-        </div>
-        <div class="height-container">
-            {{height}}
-        </div>
-        <div class="width-container">
-            {{weight}}
+            <div class="height-container">
+                {{details.height}}
+            </div>
+            <div class="width-container">
+                {{details.weight}}
+            </div>
         </div>
     </div>
 </div>
