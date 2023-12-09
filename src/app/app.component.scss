@@ -6,12 +6,23 @@
     }
 
     .router-outlet-container {
-        height: calc(100% - 10rem);
+        height: calc(100% - 7rem);
         overflow: auto;
     }
 
     .pagination-container {
-        height: 5rem;
+        height: 3rem;
+        width: 100%;
         position: fixed;
+        display: flex;
+        justify-content: center;
+
+        .buttons-container {
+            margin: 0rem 2rem;
+            /* padding-left: 35rem; */
+            display: flex;
+            align-items: center;
+            padding-bottom: 1rem;
+        }
     }
 }

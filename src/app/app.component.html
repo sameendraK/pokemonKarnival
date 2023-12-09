@@ -6,7 +6,11 @@
     <router-outlet></router-outlet>
   </div>
   <div class="pagination-container">
-    <button type="button" (click)="previousPageClickHandler($event)" [disabled]="isFirstPage">Previous</button>
-    <button type="button" (click)="nextPageClickHandler($event)">Next</button>
+    <div class="buttons-container">
+      <button type="button" (click)="previousPageClickHandler($event)" [disabled]="isFirstPage">Previous</button>
+    </div>
+    <div class="buttons-container">
+      <button type="button" (click)="nextPageClickHandler($event)">Next</button>
+    </div>
   </div>
 </div>
